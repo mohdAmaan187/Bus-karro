@@ -96,11 +96,13 @@
     color: var(--text-color);
 }
 
-.links {
+.Links {
     font-family: "kanit";
-    font-size: 20px;
+    font-size: 1.4vw;
     font-weight: 400;
     margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    color: var(--base-variant);
 }
 
 /* Mobiles */
