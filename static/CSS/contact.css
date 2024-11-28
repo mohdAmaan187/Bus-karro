@@ -35,6 +35,7 @@ p {
     --base-variant:black;
     --text-color: black;
     --text-variant:white;
+    --text-hover:black;
     --primary-color:#E5D9F2;
     --secondary-color:#CDC1FF;
     --accent-color:#A594F9;
@@ -60,7 +61,7 @@ p {
 }
 
 .contact_us_forms,
-.direct_contact_container {
+.direct_contact_container{
     flex: 1;
     padding: 30px 30px 30px 30px;
 }
@@ -163,9 +164,16 @@ p {
 
 .support_box {
     background-color: var(--text-variant);
-    height: 50px;
+    height: 400px;
+    width: auto;
+    column-count: 3;
+    padding: 20px;
+}
+
+.support_card {
+    background-color: var(--text-hover);
+    height: 190px;
     width: 100%;
-    columns: 30%;
 }
 
 .form_submitted {
