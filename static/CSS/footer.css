@@ -100,13 +100,6 @@
     margin-bottom: 80px;
 }
 
-.footer_insta,
-.footer_twitter,
-.footer_yt {
-    width: 40px;
-    margin-right: 40px;
-}
-
 .footer_details {
     display: flex;
     flex-direction: row;
@@ -119,13 +112,17 @@
     font-family: "kanit";
     font-size: 24px;
     font-weight: 600;
+    color: var(--text-color);
 }
 
 .links {
+    text-decoration: none;
     font-family: "kanit";
     font-size: 20px;
     font-weight: 400;
     margin: 10px 0px 10px 0px;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
