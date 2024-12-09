@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Select the necessary elements
-    const nextButtonNamemail = document.querySelector('.namemail .next');
+    const nextButtonNamemail = document.querySelector('.namemail .nextt');
     const backButtonPasss = document.querySelector('.passs .back');
     const namemailDiv = document.querySelector('.namemail');
     const passsDiv = document.querySelector('.passs');
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clearTimeout(alertTimeout); // Clear any existing timeout
         alertTimeout = setTimeout(() => {
             hideAlert();
-        }, 3000); // Automatically hide after 5 seconds
+        }, 2000); // Automatically hide after 2 seconds
     }
 
     // Function to hide the custom alert
