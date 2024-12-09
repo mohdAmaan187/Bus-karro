@@ -6,7 +6,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    font-family: "Kanit", sans-serif;
+    font-family: "Kanit";
 }
 
 html {
@@ -143,4 +143,32 @@ body::-webkit-scrollbar {
 .about_div1:hover .about_info,
 .about_div1:hover .about_title {
     color: var(--text-variant);
+}
+
+.bus_about {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.fit_con {
+    width: 85vw;
+    align-content: center;
+    background-color: var(--text-variant);
+    padding: 50px;
+    box-shadow: 0px 0px 15px var(--text-color);
+}
+
+.ba_title {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.ba_text {
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-color);
 }
