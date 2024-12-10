@@ -1,0 +1,186 @@
+:root {
+    --base-color:#F5EFFF;
+    --base-variant:black;
+    --text-color: black;
+    --text-variant:white;
+    --text-hover:black;
+    --primary-color:#E5D9F2;
+    --secondary-color:#CDC1FF;
+    --accent-color:#A594F9;
+}
+
+.darkmode{
+    --base-color:#18122B;
+    --base-variant:rgb(255, 255, 255);
+    --text-color: rgb(255, 255, 255);
+    --text-variant:rgb(0, 0, 0);
+    --text-hover:white;
+    --primary-color:#635985;
+    --secondary-color:#393053;
+    --accent-color:#443C68;
+}
+
+i {
+    transition: 0.1s;
+}
+
+.sidebar {
+    background-color: var(--accent-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.company_name {
+    width: 100%;
+}
+
+.comp_name {
+    color: var(--base-variant);
+    background-color: var(--accent-color);
+    text-align: left;
+    font-size: 5vh;
+    margin: 0;
+    font-family: "Kanit";
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+
+.sidebar_btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.side_btn {
+    font-family: "Kanit";
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    margin-right: 0;
+    margin-top: 5px;
+    background-color: var(--base-variant);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-variant);
+    transition: 0.5s;
+    padding-bottom: 3px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.side_btn:hover {
+    background-color: var(--text-variant);
+    box-shadow: 0 0 20px black;
+    color: var(--text-color);
+}
+
+
+.sidebar h2 {
+    padding: 0 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 0;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.sidebar .toggle-btn {
+    display: none;
+}
+
+.Links {
+    font-family: "kanit";
+    font-size: 1.4vw;
+    font-weight: 400;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    color: var(--base-variant);
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        transform: translateX(-250px);
+    }
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    .sidebar .toggle-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: -55px;
+        scale: 0.8;
+        background-color: #f4f4f4;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (width: 768px){
+    .sidebar {
+        width: 210px;
+    }
+    .sidebar {
+        transform: translateX(-250px);
+    }
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    .sidebar .toggle-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: -75px;
+        scale: 0.8;
+        background-color: #f4f4f4;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width:1024px){
+    .sidebar {
+        width: 210px;
+    }
+}
