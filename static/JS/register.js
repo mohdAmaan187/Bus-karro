@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Select the necessary elements
     const nextButtonNamemail = document.querySelector('.namemail .nextt');
     const backButtonPasss = document.querySelector('.passs .back');
     const namemailDiv = document.querySelector('.namemail');
@@ -12,19 +11,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const customAlert = document.getElementById('customAlert');
     const alertMessage = document.getElementById('alertMessage');
     // const alertClose = document.getElementById('alertClose');
-    let alertTimeout; // To store the timeout ID
+    let alertTimeout; 
 
-    // Function to show the custom alert
     function showAlert(message) {
         alertMessage.textContent = message;
         customAlert.classList.remove('hidden');
-        clearTimeout(alertTimeout); // Clear any existing timeout
+        clearTimeout(alertTimeout); 
         alertTimeout = setTimeout(() => {
             hideAlert();
-        }, 2000); // Automatically hide after 2 seconds
+        }, 2000);
     }
 
-    // Function to hide the custom alert
     function hideAlert() {
         customAlert.classList.add('hidden');
     }
@@ -32,13 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close the alert box manually
     // alertClose.addEventListener('click', () => {
     //     hideAlert();
-    //     clearTimeout(alertTimeout); // Clear timeout to avoid conflicts
+    //     clearTimeout(alertTimeout); 
     // });
 
-    // Initially hide the password section
     passsDiv.classList.add('display-none');
 
-    // Show password section only if name and email are valid
     nextButtonNamemail.addEventListener('click', () => {
         const name = nameInput.value.trim();
         const email = emailInput.value.trim();
@@ -52,13 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Go back to name/email section
     backButtonPasss.addEventListener('click', () => {
         passsDiv.classList.add('display-none');
         namemailDiv.classList.remove('display-none');
     });
 
-    // Validate passwords and show success or error
     nextButtonPasss.addEventListener('click', () => {
         const password = passwordInput.value.trim();
         const confirmPassword = confirmPasswordInput.value.trim();
