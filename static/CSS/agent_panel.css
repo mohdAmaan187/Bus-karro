@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
@@ -22,10 +23,6 @@ html {
 
 body::-webkit-scrollbar {
     display: none;
-}
-
-span{
-    transition: 0.1s ease;
 }
 
 * {
@@ -54,53 +51,6 @@ span{
     --accent-color:#443C68;
 }
 
-.container1 {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.c1 {
-    width: 1200px;
-    min-width: 80vw;
-    box-shadow: 0 0 30px var(--base-variant);
-    padding: 100px;
-    font-family: "Kanit";
-    height: max-content;
-    margin-bottom: 100px;
-    background-color: var(--text-variant);
-}
-
-.c1_head {
-    font-size: 40px;
-    text-align: center;
-}
-
-.WHY {
-    margin: 0px;
-    margin-bottom: 40px;
-    color: var(--text-color);
-    font-weight: 700;
-}
-
-.WHAT {
-    margin-top: 100px;
-}
-
-
-.textt {
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.text-head1 {
-    margin-top: 20px;
-}
-
-.text_head,
-.text_head1 {
-    font-size: 26px;
-    font-weight: 700;
+.content {
+    margin-left: 300px;
 }

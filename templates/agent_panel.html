@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agent Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/agent_panel.css">
+    <link rel="stylesheet" href="/static/css/sidebar.css">
 </head>
 <body>
-    
+    <div class="sidebar" id="sidebar">
+        <!-- <div class="toggle-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div> -->
+        <div class="userId">
+        
+        </div>
+        <div class="company_name">
+            <button class="comp_name" id="theme-switch">
+                Bus Karro
+            </button>
+        </div>
+        <div class="sidebar_btn">
+            <button class="side_btn Dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</button>
+            <button class="side_btn buses"><i class="fas fa-bus"></i> Buses</button>
+            <button class="side_btn routes"><i class="fas fa-route"></i> Routes</button>
+            <button class="side_btn drivers"><i class="fa-regular fa-id-card"></i> Drivers</button>
+            <button class="side_btn p_info"><i class="fa-solid fa-person"></i> Passenger info.</button>
+            <button class="side_btn act_bus"><i class="fa-solid fa-van-shuttle"></i> Active Buses</button>
+            <button class="side_btn settings"><i class="fas fa-cog"></i> Settings</button>
+        </div>
+    </div>
+
+    <div class="content">
+        
+    </div>
+
 </body>
+<script src="/static/JS/darkmode.js"></script>
 </html>

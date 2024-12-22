@@ -5,12 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const title = div.querySelector(".about_title");
         const info = div.querySelector(".about_info");
 
-        // Add mouseenter event to expand the div
         title.addEventListener("mouseenter", () => {
             div.classList.add("expanded");
         });
 
-        // Add mouseleave event to collapse the div
         div.addEventListener("mouseleave", () => {
             div.classList.remove("expanded");
         });
