@@ -23,6 +23,10 @@
     transition: 0.5s ease;
 }
 
+i {
+    transition: 0.1s ease;
+}
+
 /* Navigation Bar Styles */
 .nav_bar {
     display: flex;
@@ -70,7 +74,8 @@
 }
 
 .search_button,
-.sign_in_button {
+.sign_in_button,
+.side_btn {
     align-content: center;
     font-size: 1.3vw;
     font-family: "Kanit";
@@ -78,7 +83,8 @@
     margin-right: 10px;
 }
 
-.sign_in_button {
+.sign_in_button,
+.side_btn {
     margin-right: 0;
     margin-top: 5px;
     height: max-content;
@@ -91,7 +97,8 @@
     padding-bottom: 3px;
 }
 
-.sign_in_button:hover {
+.sign_in_button:hover,
+.side_btn:hover {
     background-color: var(--text-variant);
     box-shadow: 0 0 20px black;
     color: var(--text-color);

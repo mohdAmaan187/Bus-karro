@@ -8,6 +8,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    
 }
 
 p {
@@ -26,6 +27,7 @@ body::-webkit-scrollbar {
 
 * {
     transition: 0.5s ease;
+    font-family: "Kanit";
 }
 
 span {
@@ -59,6 +61,7 @@ span {
 .hero {
     display: flex;
     justify-content: center;
+    animation: fade 1s ease-in 1;
 }
 
 .title_text {
@@ -197,6 +200,7 @@ input[type='date']:in-range::-webkit-datetime-edit-text {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 200px;
+    animation: fade 1s ease-in 1;
 }
 
 .sub_hero_title {
