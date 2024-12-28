@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,42 @@
     <link rel="stylesheet" href="/static/CSS/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,500,0,0&icon_names=swap_horiz" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,500,0,0&icon_names=swap_horiz" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>Home page</title>
+    <style>
+        /* Styles for the Results Container */
+        .results {
+            position: fixed;
+            height: auto;
+            width: 10.5vw;
+            overflow-y: auto;
+            /* border: 1px solid #ddd; */
+            border-radius: 11px;
+            margin-top: 17px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* left: 55px; */
+        }
+        #results-from {
+            left: 55px;
+        }
+        #results-to {
+            right: 485px;
+        }
+        .results div {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .results div:hover {
+            background: #f0f0f0;
+        }
+    </style>
 </head>
+
 <body>
     <div class="nav_bar">
         <div class="comp_name">
@@ -22,19 +55,19 @@
         </div>
         <div class="nav_buttons">
             <p class="search_button">
-                <a href="contact.html" class="Links">
+                <a href="{% url  'Contact-Us' %}" class="Links">
                     Contact
                 </a>
             </p>
-            <a href="signin.html" class="Links">
-            <button class="sign_in_button">
-                Sign in
-            </button>
+            <a href="{% url 'Login' %}" class="Links">
+                <button class="sign_in_button">
+                    Sign in
+                </button>
             </a>
-            <a href="registration.html" class="Links">
-            <button class="sign_in_button">
-                Register
-            </button>
+            <a href="{% url 'Registration' %}" class="Links">
+                <button class="sign_in_button">
+                    Register
+                </button>
             </a>
         </div>
     </div>
@@ -48,26 +81,26 @@
             <div class="f11">
                 <div class="from_container">
                     <p class="search_text">From</p>
-                    <input type="text" placeholder="From" class="search_box">
+                    <input type="text" id="search-bar-from" placeholder="From" class="search_box">
+                    <div id="results-from" class="results"></div>
                 </div>
                 <div class="interchange">
                     <button class="inter">
-                        <span class="material-symbols-outlined">
-                            swap_horiz
-                            </span>
+                        <span class="material-symbols-outlined">swap_horiz</span>
                     </button>
                 </div>
                 <div class="to_container">
                     <p class="search_text">To</p>
-                    <input type="text" placeholder="To" class="search_box">
+                    <input type="text" id="search-bar-to" placeholder="To" class="search_box">
+                    <div id="results-to" class="results"></div>
                 </div>
                 <div class="when_container">
                     <p class="search_text">When</p>
-                    <input type="date" placeholder="When" class="search_box">
+                    <input type="date" placeholder="When" id="date" class="search_box">
                 </div>
             </div>
             <div class="search_buses">
-                <button class="search_box_btn"> <i class="fas fa-search"></i>Search Buses </button>
+                <button class="search_box_btn"><i class="fas fa-search"></i>Search Buses</button>
             </div>
         </div>
     </div>
@@ -80,49 +113,49 @@
         <div class="feature_con">
             <div class="fea rev1">
                 <p class="f_text">
-                    <span class="f_title">Real-time Seat Availability</span> 
+                    <span class="f_title">Real-time Seat Availability</span>
                     <br>
                     <br>Allows passengers to see available seats in real-time.
                 </p>
             </div>
             <div class="fea rev2">
                 <p class="f_text">
-                    <span class="f_title">Online Payment Integration</span> 
+                    <span class="f_title">Online Payment Integration</span>
                     <br>
                     <br>Supports various payment methods like credit/debit cards, net banking, and digital wallets.
                 </p>
             </div>
             <div class="fea rev3">
                 <p class="f_text">
-                    <span class="f_title">Multi-modal Interconnectivity</span> 
+                    <span class="f_title">Multi-modal Interconnectivity</span>
                     <br>
                     <br>Connects with other transport services for seamless travel planning.
                 </p>
             </div>
             <div class="fea rev4">
                 <p class="f_text">
-                    <span class="f_title">Self-Service Capability</span> 
+                    <span class="f_title">Self-Service Capability</span>
                     <br>
                     <br>Enables passengers to book, modify, and cancel tickets on their own.
                 </p>
             </div>
             <div class="fea rev5">
                 <p class="f_text">
-                    <span class="f_title">Advanced Fare Management</span> 
+                    <span class="f_title">Advanced Fare Management</span>
                     <br>
                     <br>Offers dynamic pricing based on demand, time of booking, and other factors.
                 </p>
             </div>
             <div class="fea rev6">
                 <p class="f_text">
-                    <span class="f_title">Comprehensive Reporting</span> 
+                    <span class="f_title">Comprehensive Reporting</span>
                     <br>
                     <br>Provides detailed reports and analytics for bus operators to improve services.
                 </p>
             </div>
             <div class="fea rev7">
                 <p class="f_text">
-                    <span class="f_title">Customer Support</span> 
+                    <span class="f_title">Customer Support</span>
                     <br>
                     <br>Includes features like chatbots, email support, and helplines for passenger assistance.
                 </p>
@@ -130,7 +163,7 @@
         </div>
     </div>
     <div class="sub_footer">
-    <div class="sub_footer_info">
+        <div class="sub_footer_info">
             <h1 class="sub_footer_heading">
                 Get Started
             </h1>
@@ -153,19 +186,38 @@
                 <p class="footer_company_topic">
                     <bolder>About</bolder>
                 </p>
-                <a href="about.html" class="links"><p class="links">About us</p></a>
-                <a href="tnc.html" class="links"><p class="links">Terms and Conditions</p></a>
-                <a href="policies.html" class="links"><p class="links">Privacy Policy</p></a>
-                <a href="contact.html" class="links"><p class="links">Contact Us</p></a>
+                <a href="about.html" class="links">
+                    <p class="links">About us</p>
+                </a>
+                <a href="tnc.html" class="links">
+                    <p class="links">Terms and Conditions</p>
+                </a>
+                <a href="policies.html" class="links">
+                    <p class="links">Privacy Policy</p>
+                </a>
+                <a href="contact.html" class="links">
+                    <p class="links">Contact Us</p>
+                </a>
             </div>
             <div class="footer_into2">
                 <p class="footer_topic">
                     <bolder>Info</bolder>
                 </p>
-                <a href="FAQ.html" class="links"><p class="links">FAQ</p></a>
-                <a href="blog.html" class="links"><p class="links">Blog</p></a>
-                <a href="user_agreement.html" class="links"><p class="links">User Agreement</p></a>
-                <a href="agent_reg.html" class="links"><p class="links">Agent Registration</p></a>
+                <a href="FAQ.html" class="links">
+                    <p class="links">FAQ</p>
+                </a>
+                <a href="blog.html" class="links">
+                    <p class="links">Blog</p>
+                </a>
+                <a href="user_agreement.html" class="links">
+                    <p class="links">User Agreement</p>
+                </a>
+                <a href="agent_reg.html" class="links">
+                    <p class="links">Agent Registration</p>
+                </a>
+                <a href="agent_reg.html" class="links">
+                    <p class="links">Driver Registration</p>
+                </a>
                 <!-- <button id="theme-switch">change theme</button> -->
             </div>
         </div>
@@ -173,4 +225,6 @@
 </body>
 <script src="/static/JS/darkmode.js"></script>
 <script src="/static/JS/interchange.js"></script>
+<script src="/static/JS/search.js"></script>
+
 </html>

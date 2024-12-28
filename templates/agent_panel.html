@@ -9,34 +9,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/agent_panel.css">
-    <link rel="stylesheet" href="/static/css/sidebar.css">
+    <link rel="stylesheet" href="/static/css/header.css">
 </head>
 <body>
-    <div class="sidebar" id="sidebar">
-        <!-- <div class="toggle-btn" onclick="toggleSidebar()">
-            <i class="fas fa-bars"></i>
-        </div> -->
-        <div class="userId">
-        
-        </div>
-        <div class="company_name">
-            <button class="comp_name" id="theme-switch">
+    <div class="nav_bar">
+        <div class="comp_name">
+            <button class="company_name" id="theme-switch">
                 Bus Karro
             </button>
         </div>
-        <div class="sidebar_btn">
-            <button class="side_btn Dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</button>
-            <button class="side_btn buses"><i class="fas fa-bus"></i> Buses</button>
-            <button class="side_btn routes"><i class="fas fa-route"></i> Routes</button>
-            <button class="side_btn drivers"><i class="fa-regular fa-id-card"></i> Drivers</button>
-            <button class="side_btn p_info"><i class="fa-solid fa-person"></i> Passenger info.</button>
-            <button class="side_btn act_bus"><i class="fa-solid fa-van-shuttle"></i> Active Buses</button>
-            <button class="side_btn settings"><i class="fas fa-cog"></i> Settings</button>
+        <div class="nav_buttons" style="justify-content: end;">
+            <button class="side_btn profile"><i class="fa-solid fa-user"></i> Profile</button>
         </div>
     </div>
+    
+    <div class="earning">
+        <!-- <img src="" alt=""> -->
+    </div>
+    <div class="schedule_bus">
+        <p class="bus_no">Bus No.</p>
+        <input type="number" class="buss_no_srch" placeholder="Bus Number">
+        <p class="bus_no">Assign Driver ID</p>
+        <input type="number" class="buss_no_srch" placeholder="Assign driver ID">
+    </div>
+    <div class="scheduled">
+        <h1 class="heading_txt">Scheduled</h1>
+        <div class="table">
+            Bus No.
+        </div>
+        <div class="table">
+            Driver
+        </div>
+        <div class="table">
+            Date
+        </div>
+    </div>
+    <div class="search_driver">
 
-    <div class="content">
-        
     </div>
 
 </body>
