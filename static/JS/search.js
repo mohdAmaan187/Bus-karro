@@ -162,4 +162,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.getElementById('date');
     const today = new Date().toISOString().split('T')[0];
     dateInput.setAttribute('min', today);
+
+    // Add a placeholder effect for unsupported cases
+    dateInput.addEventListener('input', function () {
+        if (this.value) {
+            this.classList.add('has-value'); // Add class when a value is selected
+        } else {
+            this.classList.remove('has-value'); // Remove class when empty
+        }
+    });
 });
+
