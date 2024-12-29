@@ -141,7 +141,7 @@ input[type="date"]:not(.has-value)::before {
 
 /* Show selected date */
 input[type="date"].has-value::-webkit-datetime-edit {
-    color: var(--text-color);
+    color: black;
 }
 
 /* Fix for non-WebKit browsers (like Firefox) */
@@ -151,7 +151,7 @@ input[type="date"]:not(.has-value)::placeholder-shown {
 
 /* Dark mode compatibility */
 body.darkmode input[type="date"]:not(.has-value)::before {
-    color: var(--text-variant);
+    color: black;
 }
 
 .search_buses {
