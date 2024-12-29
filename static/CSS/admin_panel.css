@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    /* padding-top: 100px; */
+    background-color: var(--base-color);
+    padding-bottom: 900px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+p {
+    color: var(--text-color);
+}
+
+html {
+    width: 100vw;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    /* transition: 0.5s ease; */
+    font-family: "Kanit";
+}
+
+span {
+    transition: 0.01s ease;
+    color: var(--text-hover);
+}
+
+:root {
+    --base-color:#F5EFFF;
+    --base-variant:black;
+    --text-color: black;
+    --text-variant:white;
+    --text-hover:black;
+    --primary-color:#E5D9F2;
+    --secondary-color:#CDC1FF;
+    --accent-color:#A594F9;
+}
+
+.darkmode{
+    --base-color:#18122B;
+    --base-variant:rgb(255, 255, 255);
+    --text-color: rgb(255, 255, 255);
+    --text-variant:rgb(0, 0, 0);
+    --text-hover:white;
+    --primary-color:#635985;
+    --secondary-color:#393053;
+    --accent-color:#443C68;
+}
+
+.todays_schedule,
+.heading_con,
+.earning,
+.schedule_buses {
+    display: flex;
+    justify-content: center;
+}
+
+.con_heading {
+    font-size: 50px;
+    color: var(--base-variant);
+    margin-bottom: 50px;
+}
+
+table {
+    border: solid;
+    border-color: var(--base-variant);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0px 40px;
+    font-size: 24px;
+    color: var(--base-variant);
+    /* border: none; */
+    text-align: center;
+}
+
+th {
+    font-size: 28px;
+}
+
+.bus_no {
+    padding: 0px 70px;
+}
+
+.driver {
+    padding: 0px 100px;
+}
+
+.passengerr {
+    padding: 0px 30px; 
+}
+
+.from_to {
+    padding: 0px 100px;
+}
+
+.total_revenue,
+.monthly_revenue,
+.yearly_revenue {
+    padding: 0px 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.tr,
+.mr,
+.yr {
+    font-size: 35px;
+}
+
+.fix_con {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_head {
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.form_input,
+.form_button {
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form_button {
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--base-variant);
+}
+
+.form_button:hover {
+    cursor: pointer;
+    color: var(--text-hover);
+    background-color: var(--primary-color);
+}
+
+/* Hide the default placeholder in the date input */
+input[type="date"]::-webkit-datetime-edit {
+    color: transparent; /* WebKit browsers */
+}
+
+input[type="date"]:not(.has-value)::before {
+    content: attr(placeholder); /* Custom placeholder using attribute */
+    color: var(--text-color);
+    font-style: italic;
+    position: absolute; /* Ensure the text looks like a placeholder */
+    left: 10px;
+}
+
+/* Show selected date */
+input[type="date"].has-value::-webkit-datetime-edit {
+    color: var(--text-color);
+}
+
+/* Fix for non-WebKit browsers (like Firefox) */
+input[type="date"]:not(.has-value)::placeholder-shown {
+    color: var(--text-color);
+}
+
+/* Dark mode compatibility */
+body.darkmode input[type="date"]:not(.has-value)::before {
+    color: var(--text-variant);
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-color);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    font-size: 20px;
+    color: var(--base-variant);
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin: 0px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-hover);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Compatibility with dark mode */
+body.darkmode .dropdown-menu {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+body.darkmode .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--text-hover);
+}
