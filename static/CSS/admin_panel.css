@@ -229,3 +229,23 @@ body.darkmode .dropdown-menu .dropdown-item:hover {
     background-color: var(--primary-color);
     color: var(--text-hover);
 }
+
+.formm {
+    width: auto;
+    height: auto;
+}
+
+#Logout {
+    border:none; 
+    width: 150px;
+    height: auto;
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+    cursor: pointer;
+    text-align: left;
+}
+
+#Logout:hover {
+    background-color: var(--primary-color);
+    color: var(--text-hover);
+}
