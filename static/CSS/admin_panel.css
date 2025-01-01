@@ -120,7 +120,8 @@ th {
     font-size: 35px;
 }
 
-.fix_con {
+.fix_con,
+.upd_fix_con {
     width: 50vw;
     display: flex;
     justify-content: center;
@@ -248,4 +249,104 @@ body.darkmode .dropdown-menu .dropdown-item:hover {
 #Logout:hover {
     background-color: var(--primary-color);
     color: var(--text-hover);
+}
+
+.upd_fix_con {
+    width: 80vw;
+    background-color: var(--text-variant);
+    padding: 9vh 15vh;
+    box-shadow: 0 0 20px var(--text-hover);
+}
+
+.search_box_container {
+    scale: 1.1;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 20px; 
+    /* background-color: white;  */
+    width:auto;
+    padding: 0.2vh 0vh 0.2vh 5vh;
+    height: fit-content;
+    border-radius: 3px;
+    margin-bottom: 70px;
+}
+
+.f11 {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 20px;
+    flex: 8;
+    display: flex;
+    background-color: white;
+}
+
+.fas {
+    scale: 1.5;
+    margin: 0px 9px;
+    transition: 0.01s ease;
+}
+
+.from_container {
+    padding-left: 5px;
+    flex: 2;
+    width: max-content;
+}
+
+.when_container {
+    border-left: solid 1px rgb(185, 185, 185);
+    padding-left: 15px;
+    flex: 2;
+}
+
+.search_buses {
+    flex: auto;
+    width: fit-content;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.search_box_btn {
+    height: 100%;
+    width: 90%;
+    border: none;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: var(--secondary-color);
+    transition: 0.5s;
+    font: 400 20px "Kanit";
+}
+
+.search_box {
+    font: 400 20px "Kanit";
+    padding: 5px; 
+    width: 90%; 
+    height: 40%;
+    min-width: 30%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    /* border: solid rgb(194, 194, 194) 1px; */
+}
+
+.search_text {
+    color: black;
+    margin: 2px;
+    font: 400 20px "Kanit";
+    padding-left: 5px;
+}
+
+.search_box_btn:hover {
+    cursor: pointer;
+    color: var(--text-hover);
+    background-color: var(--primary-color);
+}
+
+.bleh {
+    text-decoration: none;
+}
+
+.search_box:hover {
+    cursor: pointer;
 }

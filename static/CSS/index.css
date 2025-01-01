@@ -302,3 +302,7 @@ body.darkmode input[type="date"]:not(.has-value)::before {
     font: 600 30px "Kanit";
     color: var(--text-variant);  
 }
+
+.bleh {
+    text-decoration: none;
+}
