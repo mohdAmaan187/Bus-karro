@@ -173,3 +173,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Handle clicks on dynamically added dropdown items
+    document.addEventListener("click", function (event) {
+        if (event.target.closest(".results div")) {
+            let resultsContainer = event.target.closest(".results");
+            let inputField = resultsContainer.previousElementSibling;
+
+            if (inputField && inputField.classList.contains("form_input")) {
+                inputField.value = event.target.textContent; // Set input field value
+                resultsContainer.style.display = "none"; // Hide dropdown after selection
+            }
+        }
+    });
+
+    // Show dropdown when input is focused
+    document.querySelectorAll(".form_input").forEach(input => {
+        input.addEventListener("focus", function () {
+            let resultsContainer = this.nextElementSibling;
+            if (resultsContainer && resultsContainer.classList.contains("results")) {
+                resultsContainer.style.display = "block"; // Show dropdown
+            }
+        });
+    });
+
+    // Hide dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".schedule_buses")) {
+            document.querySelectorAll(".results").forEach(results => {
+                results.style.display = "none"; // Hide all dropdowns
+            });
+        }
+    });
+});

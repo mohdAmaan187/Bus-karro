@@ -9,16 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     searchButton.addEventListener("click", (event) => {
         event.preventDefault(); // Prevent default button behavior (for <a> or <button> inside <a>)
 
-        // Check if search fields are filled (optional validation)
-        const busNoInput = document.getElementById("search-bar-from").value;
-        const dateInput = document.getElementById("date").value;
-
-        if (busNoInput || dateInput) {
-            // Show the table if there's input
             table.style.display = "table";
-        } else {
-            alert("Please enter Bus No. or Date to search!");
-        }
     });
 });
 

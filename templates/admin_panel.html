@@ -15,6 +15,47 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+        <style>
+            .input-container {
+                position: relative; /* Ensures the dropdown aligns correctly under the input field */
+                width: 100%;
+            }
+
+            .form_input {
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box; /* Ensures padding doesn’t affect width */
+            }
+
+            .results {
+                position: absolute;
+                top: 100%; /* Positions the dropdown right below the input field */
+                left: 0;
+                width: 100%;
+                max-height: 200px;
+                overflow-y: auto;
+                border-radius: 11px;
+                margin-top: 5px; /* Slight spacing between input and dropdown */
+                background: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                display: none; /* Initially hidden */
+            }
+
+            .results div {
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .results div:hover {
+                background: #f0f0f0;
+            }
+
+            /* Show the dropdown when the input is focused */
+            .input-container:focus-within .results {
+                display: block;
+            }
+        </style>
 </head>
 <body>
     <!-- ADMIN KE LIYE -->
@@ -124,14 +165,20 @@
                 Date
             </p>
             <input type="date" class="form_input" id="date">
+            <div class="input-container">
             <p class="form_head">
                 From
             </p>
-            <input type="text" class="form_input" placeholder="From">
+            <input type="text" class="form_input" placeholder="From" id="search-bar-from">
+            <div id="results-from" class="results"></div>
+            </div>
+            <div class="input-container">
             <p class="form_head">
                 To         
             </p>
-            <input type="text" class="form_input" placeholder="To">
+            <input type="text" class="form_input" placeholder="To" id="search-bar-to">
+            <div id="results-to" class="results"></div>
+            </div>
             <p class="form_head">
                 Driver Name
             </p>
@@ -212,6 +259,37 @@
                 </table>
             </div>
             <div class="schedule_buses" id="edit_buses">
+                <style>
+                    .input-container {
+                        position: relative;
+                        width: 100%;
+                    }
+
+                    .results {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        max-height: 200px;
+                        overflow-y: auto;
+                        border-radius: 11px;
+                        margin-top: 5px;
+                        background: #fff;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                        z-index: 1000;
+                        display: none;
+                    }
+
+                    .results div {
+                        padding: 10px;
+                        cursor: pointer;
+                    }
+
+                    .results div:hover {
+                        background: #f0f0f0;
+                    }
+
+                </style>
                 <div class="fix_con">
                     <p class="form_head">
                         Bus No.
@@ -221,14 +299,20 @@
                         Date
                     </p>
                     <input type="date" class="form_input" id="date">
+                    <div class="input-container">
                     <p class="form_head">
                         From
                     </p>
-                    <input type="text" class="form_input" placeholder="From">
+                    <input type="text" class="form_input" placeholder="From" id="search-bar-from">
+                    <div id="results-from" class="results"></div>
+                    </div>
+                    <div class="input-container">
                     <p class="form_head">
                         To         
                     </p>
-                    <input type="text" class="form_input" placeholder="To">
+                    <input type="text" class="form_input" placeholder="To" id="search-bar-to">
+                    <div id="results-to" class="results"></div>
+                    </div>
                     <p class="form_head">
                         Driver Name
                     </p>
