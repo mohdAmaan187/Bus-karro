@@ -8,7 +8,6 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    
 }
 
 p {
@@ -384,7 +383,23 @@ body.darkmode input[type="date"]:not(.has-value)::before {
 }
 
 .table {
-    width: 80vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
+    margin-bottom: 100px;
+}
+
+#LC {
+    margin-bottom: 200px;
+}
+
+.edt,
+.dlt {
+    width: auto;
+    height: auto;
+    background-color: var(--text-variant);
+    color: var(--text-color);
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
 }

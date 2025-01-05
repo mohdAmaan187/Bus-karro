@@ -144,7 +144,7 @@
             Search Buses
         </h1>
     </div>
-    <div class="schedule_buses">
+    <div class="schedule_buses" id="LC">
         <div class="upd_fix_con">
             <div class="search_box_container">
                 <div class="f11">
@@ -179,6 +179,12 @@
                         <th class="passengerr">
                             Time
                         </th>
+                        <th class="passengerr">
+                            Edit
+                        </th>
+                        <th class="passengerr">
+                            Delete
+                        </th>
                     </tr>
                     <tr>
                         <td class="bus_no">
@@ -196,12 +202,88 @@
                         <td class="passengerr">
                             1
                         </td>
+                        <td class="passengerr">
+                            <button class="edt">Edit</button>
+                        </td>
+                        <td class="passengerr">
+                            <button class="dlt">Delete</button>
+                        </td>
                     </tr>
                 </table>
             </div>
+            <div class="schedule_buses" id="edit_buses">
+                <div class="fix_con">
+                    <p class="form_head">
+                        Bus No.
+                    </p>
+                    <input type="number" class="form_input" placeholder="Bus number">
+                    <p class="form_head">
+                        Date
+                    </p>
+                    <input type="date" class="form_input" id="date">
+                    <p class="form_head">
+                        From
+                    </p>
+                    <input type="text" class="form_input" placeholder="From">
+                    <p class="form_head">
+                        To         
+                    </p>
+                    <input type="text" class="form_input" placeholder="To">
+                    <p class="form_head">
+                        Driver Name
+                    </p>
+                    <input type="text" class="form_input" placeholder="Driver Name">
+                    <button class="form_button">Submit</button>
+                </div>
+            </div>
             
 
+        </div>
+    </div>
 
+    <div class="footer">
+        <div class="footer_company_name">
+            <h1 class="footer_company_name_text">Bus Karro</h1>
+        </div>
+        <div class="footer_details">
+            <div class="footer_info1">
+                <p class="footer_company_topic">
+                    <bolder>About</bolder>
+                </p>
+                <a href="about.html" class="links">
+                    <p class="links">About us</p>
+                </a>
+                <a href="tnc.html" class="links">
+                    <p class="links">Terms and Conditions</p>
+                </a>
+                <a href="policies.html" class="links">
+                    <p class="links">Privacy Policy</p>
+                </a>
+                <a href="contact.html" class="links">
+                    <p class="links">Contact Us</p>
+                </a>
+            </div>
+            <div class="footer_into2">
+                <p class="footer_topic">
+                    <bolder>Info</bolder>
+                </p>
+                <a href="FAQ.html" class="links">
+                    <p class="links">FAQ</p>
+                </a>
+                <a href="blog.html" class="links">
+                    <p class="links">Blog</p>
+                </a>
+                <a href="user_agreement.html" class="links">
+                    <p class="links">User Agreement</p>
+                </a>
+                <a href="agent_reg.html" class="links">
+                    <p class="links">Agent Registration</p>
+                </a>
+                <a href="agent_reg.html" class="links">
+                    <p class="links">Driver Registration</p>
+                </a>
+                <!-- <button id="theme-switch">change theme</button> -->
+            </div>
         </div>
     </div>
     
