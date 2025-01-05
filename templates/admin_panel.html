@@ -144,7 +144,7 @@
             Search Buses
         </h1>
     </div>
-    <div class="schedule_buses">
+    <div class="schedule_buses" id="LC">
         <div class="upd_fix_con">
             <div class="search_box_container">
                 <div class="f11">
@@ -161,44 +161,129 @@
                     <a href="user_panel.html" class="bleh"><button class="search_box_btn"><i class="fas fa-search"></i></button></a>
                 </div>
             </div>
-            <table border="1">
-                <tr>
-                    <th class="bus_no">
+            <div class="table">
+                <table border="1">
+                    <tr>
+                        <th class="bus_no">
+                            Bus No.
+                        </th>
+                        <th class="driver">
+                            Driver
+                        </th>
+                        <th class="from_to">
+                            From - To
+                        </th>
+                        <th class="date">
+                            Date
+                        </th>
+                        <th class="passengerr">
+                            Time
+                        </th>
+                        <th class="passengerr">
+                            Edit
+                        </th>
+                        <th class="passengerr">
+                            Delete
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="bus_no">
+                            123456789
+                        </td>
+                        <td class="driver">
+                            Mohd. Amaan Shaikh
+                        </td>
+                        <td class="from_to">
+                            My heart to her
+                        </td>
+                        <td class="date">
+                            69-69-6969
+                        </td>
+                        <td class="passengerr">
+                            1
+                        </td>
+                        <td class="passengerr">
+                            <button class="edt">Edit</button>
+                        </td>
+                        <td class="passengerr">
+                            <button class="dlt">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="schedule_buses" id="edit_buses">
+                <div class="fix_con">
+                    <p class="form_head">
                         Bus No.
-                    </th>
-                    <th class="driver">
-                        Driver
-                    </th>
-                    <th class="from_to">
-                        From - To
-                    </th>
-                    <th class="date">
+                    </p>
+                    <input type="number" class="form_input" placeholder="Bus number">
+                    <p class="form_head">
                         Date
-                    </th>
-                    <th class="passengerr">
-                        Time
-                    </th>
-                </tr>
-                <tr>
-                    <td class="bus_no">
-                        123456789
-                    </td>
-                    <td class="driver">
-                        Mohd. Amaan Shaikh
-                    </td>
-                    <td class="from_to">
-                        My heart to her
-                    </td>
-                    <td class="date">
-                        69-69-6969
-                    </td>
-                    <td class="passengerr">
-                        1
-                    </td>
-                </tr>
-            </table>
+                    </p>
+                    <input type="date" class="form_input" id="date">
+                    <p class="form_head">
+                        From
+                    </p>
+                    <input type="text" class="form_input" placeholder="From">
+                    <p class="form_head">
+                        To         
+                    </p>
+                    <input type="text" class="form_input" placeholder="To">
+                    <p class="form_head">
+                        Driver Name
+                    </p>
+                    <input type="text" class="form_input" placeholder="Driver Name">
+                    <button class="form_button">Submit</button>
+                </div>
+            </div>
+            
 
+        </div>
+    </div>
 
+    <div class="footer">
+        <div class="footer_company_name">
+            <h1 class="footer_company_name_text">Bus Karro</h1>
+        </div>
+        <div class="footer_details">
+            <div class="footer_info1">
+                <p class="footer_company_topic">
+                    <bolder>About</bolder>
+                </p>
+                <a href="about.html" class="links">
+                    <p class="links">About us</p>
+                </a>
+                <a href="tnc.html" class="links">
+                    <p class="links">Terms and Conditions</p>
+                </a>
+                <a href="policies.html" class="links">
+                    <p class="links">Privacy Policy</p>
+                </a>
+                <a href="contact.html" class="links">
+                    <p class="links">Contact Us</p>
+                </a>
+            </div>
+            <div class="footer_into2">
+                <p class="footer_topic">
+                    <bolder>Info</bolder>
+                </p>
+                <a href="FAQ.html" class="links">
+                    <p class="links">FAQ</p>
+                </a>
+                <a href="blog.html" class="links">
+                    <p class="links">Blog</p>
+                </a>
+                <a href="user_agreement.html" class="links">
+                    <p class="links">User Agreement</p>
+                </a>
+                <a href="agent_reg.html" class="links">
+                    <p class="links">Agent Registration</p>
+                </a>
+                <a href="agent_reg.html" class="links">
+                    <p class="links">Driver Registration</p>
+                </a>
+                <!-- <button id="theme-switch">change theme</button> -->
+            </div>
         </div>
     </div>
     
@@ -207,4 +292,5 @@
 </body>
 <script src="/static/JS/darkmode.js"></script>
 <script src="/static/JS/search.js"></script>
+<script src="/static/JS/table.js"></script>
 </html>

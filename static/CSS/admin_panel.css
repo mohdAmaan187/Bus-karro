@@ -8,7 +8,6 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    
 }
 
 p {
@@ -33,6 +32,10 @@ body::-webkit-scrollbar {
 span {
     transition: 0.01s ease;
     color: var(--text-hover);
+}
+
+table {
+    width: 80vw;
 }
 
 :root {
@@ -348,5 +351,55 @@ body.darkmode .dropdown-menu .dropdown-item:hover {
 }
 
 .search_box:hover {
+    cursor: pointer;
+}
+
+/* Hide the default placeholder in the date input */
+input[type="date"]::-webkit-datetime-edit {
+    color: transparent; /* WebKit browsers */
+}
+
+input[type="date"]:not(.has-value)::before {
+    content: attr(placeholder); /* Custom placeholder using attribute */
+    color: var(--text-color);
+    font-style: italic;
+    position: absolute; /* Ensure the text looks like a placeholder */
+    left: 10px;
+}
+
+/* Show selected date */
+input[type="date"].has-value::-webkit-datetime-edit {
+    color: black;
+}
+
+/* Fix for non-WebKit browsers (like Firefox) */
+input[type="date"]:not(.has-value)::placeholder-shown {
+    color: var(--text-color);
+}
+
+/* Dark mode compatibility */
+body.darkmode input[type="date"]:not(.has-value)::before {
+    color: black;
+}
+
+.table {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#LC {
+    margin-bottom: 200px;
+}
+
+.edt,
+.dlt {
+    width: auto;
+    height: auto;
+    background-color: var(--text-variant);
+    color: var(--text-color);
+    font-size: 24px;
+    border: none;
     cursor: pointer;
 }
