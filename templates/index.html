@@ -17,7 +17,6 @@
         rel="stylesheet">
     <title>Home page</title>
     <style>
-        /* Styles for the Results Container */
         .results {
             position: fixed;
             height: auto;
@@ -26,7 +25,7 @@
             /* border: 1px solid #ddd; */
             border-radius: 11px;
             margin-top: 17px;
-            background: #fff;
+            background: #ffffff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             /* left: 55px; */
         }
@@ -55,16 +54,16 @@
         </div>
         <div class="nav_buttons">
             <p class="search_button">
-                <a href="{% url  'Contact-Us' %}" class="Links">
+                <a href="contact.html" class="Links">
                     Contact
                 </a>
             </p>
-            <a href="{% url 'Login' %}" class="Links">
+            <a href="signin.html" class="Links">
                 <button class="sign_in_button">
                     Sign in
                 </button>
             </a>
-            <a href="{% url 'Registration' %}" class="Links">
+            <a href="registration.html" class="Links">
                 <button class="sign_in_button">
                     Register
                 </button>

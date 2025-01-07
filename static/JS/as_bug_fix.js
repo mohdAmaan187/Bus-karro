@@ -172,33 +172,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     document.addEventListener("click", function (event) {
-//         if (event.target.closest(".results div")) {
-//             let resultsContainer = event.target.closest(".results");
-//             let inputField = resultsContainer.previousElementSibling;
+document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("click", function (event) {
+        if (event.target.closest(".results div")) {
+            let resultsContainer = event.target.closest(".results");
+            let inputField = resultsContainer.previousElementSibling;
 
-//             if (inputField && inputField.classList.contains("form_input")) {
-//                 inputField.value = event.target.textContent;
-//                 resultsContainer.style.display = "none"; 
-//             }
-//         }
-//     });
+            if (inputField && inputField.classList.contains("form_input")) {
+                inputField.value = event.target.textContent;
+                resultsContainer.style.display = "none"; 
+            }
+        }
+    });
 
-//     document.querySelectorAll(".form_input").forEach(input => {
-//         input.addEventListener("focus", function () {
-//             let resultsContainer = this.nextElementSibling;
-//             if (resultsContainer && resultsContainer.classList.contains("results")) {
-//                 resultsContainer.style.display = "block"; 
-//             }
-//         });
-//     });
+    document.querySelectorAll(".form_input").forEach(input => {
+        input.addEventListener("focus", function () {
+            let resultsContainer = this.nextElementSibling;
+            if (resultsContainer && resultsContainer.classList.contains("results")) {
+                resultsContainer.style.display = "block"; 
+            }
+        });
+    });
 
-//     document.addEventListener("click", function (event) {
-//         if (!event.target.closest(".schedule_buses")) {
-//             document.querySelectorAll(".results").forEach(results => {
-//                 results.style.display = "none"; 
-//             });
-//         }
-//     });
-// });
+    document.addEventListener("click", function (event) {
+        if (!event.target.closest(".schedule_buses")) {
+            document.querySelectorAll(".results").forEach(results => {
+                results.style.display = "none"; 
+            });
+        }
+    });
+});

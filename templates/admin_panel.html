@@ -17,29 +17,29 @@
         rel="stylesheet">
         <style>
             .input-container {
-                position: relative; /* Ensures the dropdown aligns correctly under the input field */
+                position: relative; 
                 width: 100%;
             }
 
             .form_input {
                 width: 100%;
                 padding: 10px;
-                box-sizing: border-box; /* Ensures padding doesn’t affect width */
+                box-sizing: border-box; 
             }
 
             .results {
                 position: absolute;
-                top: 100%; /* Positions the dropdown right below the input field */
+                top: 100%;
                 left: 0;
                 width: 100%;
                 max-height: 200px;
                 overflow-y: auto;
                 border-radius: 11px;
-                margin-top: 5px; /* Slight spacing between input and dropdown */
-                background: #fff;
+                margin-top: 5px; 
+                background: #ffffff;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
                 z-index: 1000;
-                display: none; /* Initially hidden */
+                display: none; 
             }
 
             .results div {
@@ -51,18 +51,12 @@
                 background: #f0f0f0;
             }
 
-            /* Show the dropdown when the input is focused */
             .input-container:focus-within .results {
                 display: block;
             }
         </style>
 </head>
 <body>
-    <!-- ADMIN KE LIYE -->
-     <!-- header
-      dashboard
-      
-      -->
       <div class="nav_bar">
         <div class="comp_name">
             <button class="company_name" id="theme-switch">
@@ -139,10 +133,10 @@
                     Mohd. Amaan Shaikh
                 </td>
                 <td class="from_to">
-                    My heart to her
+                    Hell to Heaven
                 </td>
                 <td class="date">
-                    69-69-6969
+                    18-07-2025
                 </td>
                 <td class="passengerr">
                     1
@@ -183,6 +177,10 @@
                 Driver Name
             </p>
             <input type="text" class="form_input" placeholder="Driver Name">
+            <p class="form_head">
+                Time
+            </p>
+            <input type="Time" class="form_input" placeholder="Departure Time">
             <button class="form_button">Submit</button>
         </div>
     </div>
@@ -191,7 +189,7 @@
             Search Buses
         </h1>
     </div>
-    <div class="schedule_buses" id="LC">
+    <div class="schedule_buses1" id="LC">
         <div class="upd_fix_con">
             <div class="search_box_container">
                 <div class="f11">
@@ -241,10 +239,10 @@
                             Mohd. Amaan Shaikh
                         </td>
                         <td class="from_to">
-                            My heart to her
+                            life to AfterLife
                         </td>
                         <td class="date">
-                            69-69-6969
+                            18-07-2025
                         </td>
                         <td class="passengerr">
                             1
@@ -259,37 +257,6 @@
                 </table>
             </div>
             <div class="schedule_buses" id="edit_buses">
-                <style>
-                    .input-container {
-                        position: relative;
-                        width: 100%;
-                    }
-
-                    .results {
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        width: 100%;
-                        max-height: 200px;
-                        overflow-y: auto;
-                        border-radius: 11px;
-                        margin-top: 5px;
-                        background: #fff;
-                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                        z-index: 1000;
-                        display: none;
-                    }
-
-                    .results div {
-                        padding: 10px;
-                        cursor: pointer;
-                    }
-
-                    .results div:hover {
-                        background: #f0f0f0;
-                    }
-
-                </style>
                 <div class="fix_con">
                     <p class="form_head">
                         Bus No.
@@ -303,20 +270,24 @@
                     <p class="form_head">
                         From
                     </p>
-                    <input type="text" class="form_input" placeholder="From" id="search-bar-from">
-                    <div id="results-from" class="results"></div>
+                    <input type="text" class="form_input" placeholder="From" id="search-bar-from1">
+                    <div id="results-from1" class="results"></div>
                     </div>
                     <div class="input-container">
                     <p class="form_head">
                         To         
                     </p>
-                    <input type="text" class="form_input" placeholder="To" id="search-bar-to">
-                    <div id="results-to" class="results"></div>
+                    <input type="text" class="form_input" placeholder="To" id="search-bar-to1">
+                    <div id="results-to1" class="results"></div>
                     </div>
-                    <p class="form_head">
+                    <p class="form_head1">
                         Driver Name
                     </p>
                     <input type="text" class="form_input" placeholder="Driver Name">
+                    <p class="form_head">
+                        Time
+                    </p>
+                    <input type="Time" class="form_input" placeholder="Departure Time">
                     <button class="form_button">Submit</button>
                 </div>
             </div>
@@ -377,4 +348,6 @@
 <script src="/static/JS/darkmode.js"></script>
 <script src="/static/JS/search.js"></script>
 <script src="/static/JS/table.js"></script>
+<script src="/static/JS/as_bug_fix.js"></script>
+<script src="/static/JS/edit_search.js"></script>
 </html>
