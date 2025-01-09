@@ -126,30 +126,26 @@ span {
     padding-left: 15px;
 }
 
-/* Hide the default placeholder in the date input */
 input[type="date"]::-webkit-datetime-edit {
-    color: transparent; /* WebKit browsers */
+    color: transparent; 
 }
 
 input[type="date"]:not(.has-value)::before {
-    content: attr(placeholder); /* Custom placeholder using attribute */
+    content: attr(placeholder);
     color: var(--text-color);
     font-style: italic;
-    position: absolute; /* Ensure the text looks like a placeholder */
+    position: absolute; 
     left: 10px;
 }
 
-/* Show selected date */
 input[type="date"].has-value::-webkit-datetime-edit {
     color: black;
 }
 
-/* Fix for non-WebKit browsers (like Firefox) */
 input[type="date"]:not(.has-value)::placeholder-shown {
     color: var(--text-color);
 }
 
-/* Dark mode compatibility */
 body.darkmode input[type="date"]:not(.has-value)::before {
     color: black;
 }
