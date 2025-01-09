@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const table = document.querySelector(".table");
-    const searchButton = document.querySelector(".search_box_btn"); 
+    const searchForm = document.querySelector("#searchForm"); 
 
     table.style.display = "none";
 
-
-    searchButton.addEventListener("click", (event) => {
+    searchForm.addEventListener("submit", (event) => {
         event.preventDefault();
-            table.style.display = "table";
+        table.style.display = "table";
     });
 });
 
@@ -19,6 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     editButton.addEventListener("click", (event) => {
         event.preventDefault(); 
-            form.style.display = "flex";
+        form.style.display = "flex";
     });
 });
