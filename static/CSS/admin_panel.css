@@ -4,7 +4,7 @@ body {
     padding: 0;
     /* padding-top: 100px; */
     background-color: var(--base-color);
-    padding-bottom: 900px;
+    padding-bottom: 100px;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -95,11 +95,11 @@ th {
 }
 
 .bus_no {
-    padding: 0px 70px;
+    padding: 0px 40px;
 }
 
 .driver {
-    padding: 0px 100px;
+    padding: 0px 40px;
 }
 
 .passengerr {
@@ -107,7 +107,7 @@ th {
 }
 
 .from_to {
-    padding: 0px 100px;
+    padding: 0px 50px;
 }
 
 .total_revenue,
@@ -251,10 +251,9 @@ body.darkmode .dropdown-menu .dropdown-item:hover {
 }
 
 .upd_fix_con {
-    width: 80vw;
-    background-color: var(--text-variant);
-    padding: 9vh 15vh;
-    box-shadow: 0 0 20px var(--text-hover);
+    width: auto;
+    padding: 20px;
+    margin: 50px;
 }
 
 .search_box_container {
@@ -265,7 +264,7 @@ body.darkmode .dropdown-menu .dropdown-item:hover {
     margin: 20px; 
     /* background-color: white;  */
     width:auto;
-    padding: 0.2vh 0vh 0.2vh 5vh;
+    padding: 0.2vh 0vh 0.2vh 2vh;
     height: fit-content;
     border-radius: 3px;
     margin-bottom: 70px;
@@ -352,7 +351,7 @@ body.darkmode .dropdown-menu .dropdown-item:hover {
 
 
 .table {
-    width: 90vw;
+    /* width: auto; */
     display: flex;
     justify-content: center;
     margin-bottom: 100px;

@@ -4,7 +4,7 @@ body {
     padding: 0;
     /* padding-top: 100px; */
     background-color: var(--base-color);
-    padding-bottom: 900px;
+    /* padding-bottom: 900px; */
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -13,6 +13,7 @@ body {
 
 p {
     color: var(--text-color);
+    margin: 0px;
 }
 
 html {
@@ -55,4 +56,269 @@ span {
     --primary-color:#635985;
     --secondary-color:#393053;
     --accent-color:#443C68;
+}
+
+.location_date {
+    background-color: var(--secondary-color);
+    width: 100vw;
+    height: 40px;
+    display: flex;
+}
+.location,
+.date {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.location_txt,
+.date_txt,
+.location_txt1,
+.date_txt1 {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.location_txt1,
+.date_txt1 {
+    color: black;
+}
+
+.fa-arrow-right {
+    margin-top: 8px;
+    scale: 1.2;
+    color: black;
+}
+
+.fas {
+    margin-top: 8px;
+    scale: 1.2;
+    color: var(--text-color);
+}
+
+.main_screen {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: var(--accent-color);
+}
+
+.menu_screen {
+    flex: 6;
+}
+
+/* Menu Screen CSS */
+.buses_found {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 15px 20px;
+}
+
+.bolderr {
+    font-weight: 600;
+    transition: 0.2s ease-in;
+}
+
+.booking_card {
+    border: solid 1px var(--text-color);
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+.starting_point {
+    background-color: rgb(199, 199, 199);
+    padding: 7px;
+}
+
+.bus_info {
+    display: flex;
+}
+
+.main_info,
+.side_info {
+    padding: 20px 0px;
+    height: 100px;
+    align-content: end;
+}
+
+.main_info {
+    flex: 2;
+}
+.side_info {
+    flex: 1;
+}
+
+.time,
+.bus_no,
+.price,
+.availability,
+.bus_type {
+    font-size: 20px;
+}
+
+.view_seat {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.view_seat_btn  {
+    background-color: rgb(219, 0, 0);
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    font-size: 20px;
+}
+
+.view_seat_btn:hover {
+    background-color: rgb(128, 0, 0);
+    cursor: pointer;
+}
+
+.seats {
+    display: none;
+    background-color: rgb(196, 196, 196);
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#toggleseats:checked ~ .seats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seat_map,
+.seat_legend {
+    flex: 1;
+}
+
+.seat_map {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper_berth,
+.lower_berth {
+    height: auto;
+    width: auto;
+    border: solid 1px black;
+}
+
+.lower_berth {
+    margin-top: 40px;
+}
+
+.lower {
+    display: flex;
+}
+
+.berth_txt {
+    font-size: 20px;
+    padding: 5px 20px;
+    color: black;
+}
+
+.double,
+.single {
+    /* display: flex; */
+    columns: 6;
+    padding: 20px;   
+}
+
+.map,
+.booked,
+.available {
+    padding: 4px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: end;
+}
+
+.pillow {
+    height: 15px;
+    width: 5px;
+    border: solid 1px black;
+}
+
+.driver {
+    flex: 0.1;
+}
+
+.driver_txt {
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    color: black;
+}
+
+.bruh {
+    flex: 11;
+}
+
+.seat_legend {
+    padding: 0px 20px;
+    padding-bottom: 20px;
+}
+
+.seat_lgnd {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+    color: black;
+}
+
+.lgnd_icon {
+    width: 200px;
+    columns: 2;
+    padding-top: 10px;
+}
+
+.lgnd_txt {
+    display: inline;
+    font-size: 18px;
+    color: black;
+}
+
+.booked {
+    background-color: rgb(133, 133, 133);
+    border: solid 1px black;
+}
+
+.booking_policy {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.policyy {
+    font-size: 18px;
+    color: black;
+}
+
+/* SIDEBAR CSS */
+.sidebar {
+    padding: 10px;
+    height: 100vh;
+}
+
+.sidebar_txt {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.bt_txt {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.filter_select {
+    width: 100px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }

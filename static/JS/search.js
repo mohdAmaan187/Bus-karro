@@ -172,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
 // document.addEventListener("DOMContentLoaded", function () {
 //     document.addEventListener("click", function (event) {
 //         if (event.target.closest(".results div")) {
