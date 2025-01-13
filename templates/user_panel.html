@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 <body>
-    <div class="nav_bar">
+    <div class="nav_bar" style="margin-bottom: 0px;">
         <div class="comp_name">
             <button class="company_name" id="theme-switch">
                 Bus Karro
@@ -25,29 +25,255 @@
         </div>
         <div class="nav_buttons">
             <p class="search_button">
-                <a href="{% url  'Contact-Us' %}" class="Links">
+                <a href="contact.html" class="Links">
                     Contact
                 </a>
             </p>
-            <a href="{% url 'Login' %}" class="Links">
+            <a href="signin.html" class="Links">
                 <button class="sign_in_button">
                     Sign in
                 </button>
             </a>
-            <a href="{% url 'Registration' %}" class="Links">
+            <a href="registration.html" class="Links">
                 <button class="sign_in_button">
                     Register
                 </button>
             </a>
         </div>
     </div>
-    <div class="sidebar">
-
+    <div class="location_date">
+        <div class="location">
+            <p class="location_txt">
+                Swargate,Pune
+            </p>
+            <i class="fas fa-arrow-right"></i>
+            <p class="location_txt">
+                Lakdikapul,Hyderabad
+            </p>
+        </div>
+        <div class="date">
+            <p class="date_txt">24th January</p>
+        </div>
     </div>
-    <div class="main_menu">
-        
+    <div class="main_screen">
+        <div class="sidebar">
+            <p class="sidebar_txt">Filters</p>
+            <div class="bus_type_filter">
+                <p class="bt_txt">BUS TYPE</p>
+                <input type="checkbox" name="AC" class="filter_select">AC</input><br>
+                <input type="checkbox" name="NON AC" id="" class="filter_select">NON AC</input><br>
+                <input type="checkbox" name="SLEEPER" id="" class="filter_select">SLEEPER</input><br>
+                <input type="checkbox" name="SEATER" id="" class="filter_select">SEATER</input><br>
+                <!-- AC , NON AC , SLEEPER , SEATER -->
+            </div>
+            <div class="dept_time">
+                <!-- BEFORE 6 AM , 6 AM TO 12 PM , 12 PM TO 6 PM , AFTER 6 PM -->
+            </div>
+            <div class="arrival_time">
+                <!-- BEFORE 6 AM , 6 AM TO 12 PM , 12 PM TO 6 PM , AFTER 6 PM -->
+            </div>
+        </div>
+        <div class="menu_screen">
+            <p class="buses_found"><span class="bolderr">3 Buses</span> Found</p>
+            <div class="booking_card">
+                <div class="starting_point">
+                    <div class="location">
+                        <p class="location_txt1">
+                            Swargate,Pune
+                        </p>
+                        <i class="fas fa-arrow-right" id="icon1"></i>
+                        <p class="location_txt1">
+                            Lakdikapul,Hyderabad
+                        </p>
+                    </div>
+                </div>
+                <div class="details_con">
+                    <div class="info_con">
+                        <div class="bus_info">
+                            <div class="main_info">
+                                <p class="time">Time:- <span id="time">yaha pe django db link karna</span></p>
+                                <p class="bus_no">Bus No.:- <span id="bus_no">yaha pe django db link karna</span></p>
+                                <p class="price">Price:- <span id="price">yaha pe django db link karna</span></p>    
+                            </div>
+                            <div class="side_info">
+                                <p class="availability">Seats Available:- <span id="availability">yaha pe django db link karna</span></p>
+                                <p class="bus_type">Bus Type:- <span id="bus_type">yaha pe django db link karna</span></p>
+                            </div>
+                        </div>
+                        <div class="view_seat">
+                            <button class="view_seat_btn">View Seat</button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="seats">
+                    <div class="seat_map">
+                        <div class="upper_berth">
+                            <p class="berth_txt">Upper Berth</p>
+                            <div class="double">
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                            </div>
+                            <div class="single">
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                            </div>
+                        </div>
+                        <div class="lower_berth">
+                            <p class="berth_txt">Lower Berth</p>
+                            <div class="lower">
+                                <div class="driver">
+                                    <p class="driver_txt">DRIVER</p>
+                                </div>
+                                <div class="bruh">
+                                    <div class="double">
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                    </div>
+                                    <div class="single">
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                        <button class="map"><div class="pillow"></div></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seat_legend">
+                        <p class="seat_lgnd">SEAT LEGEND</p>
+                        <div class="lgnd_icon">
+                            <button class="map available"><div class="pillow"></div></button>
+                            <p class="lgnd_txt">Available</p>
+                            <button class="map booked"><div class="pillow"></div></button>
+                            <p class="lgnd_txt">Booked</p>
+                        </div>
+                        <p class="booking_policy">Booking Policy</p>
+                        <p class="policyy">This booking is non-refundable</p>
+                        <p class="policyy">This booking falls under the 100% cancellation charges window of the cancellation policy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="booking_card">
+                <div class="starting_point">
+                    <div class="location">
+                        <p class="location_txt">
+                            Swargate,Pune
+                        </p>
+                        <i class="fas fa-arrow-right"></i>
+                        <p class="location_txt">
+                            Lakdikapul,Hyderabad
+                        </p>
+                    </div>
+                </div>
+                <div class="details_con">
+                    <div class="info_con">
+                        <div class="bus_info">
+                            <div class="main_info">
+                                <p class="time">Time:- <span id="time">yaha pe django db link karna</span></p>
+                                <p class="bus_no">Bus No.:- <span id="bus_no">yaha pe django db link karna</span></p>
+                                <p class="price">Price:- <span id="price">yaha pe django db link karna</span></p>    
+                            </div>
+                            <div class="side_info">
+                                <p class="availability">Seats Available:- <span id="availability">yaha pe django db link karna</span></p>
+                                <p class="bus_type">Bus Type:- <span id="bus_type">yaha pe django db link karna</span></p>
+                            </div>
+                        </div>
+                        <div class="view_seat">
+                            <button class="view_seat_btn">View Seat</button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="seats">
+                    <div class="seat_map">
+                        <div class="upper_berth">
+                            <p class="berth_txt">Upper Berth</p>
+                            <div class="double">
+                                <select class="map"><div class="pillow"></div></select>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                            </div>
+                            <div class="single">
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                            </div>
+                        </div>
+                        <div class="lower_berth">
+                            <p class="berth_txt">Lower Berth</p>
+                            <div class="driver">
+                                driver here
+                            </div>
+                            <div class="double">
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                            </div>
+                            <div class="single">
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                                <button class="map"><div class="pillow"></div></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seat_legend">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 </body>
 <script src="/static/JS/darkmode.js"></script>
+<script src="/static/JS/seat_booking.js"></script>
 </html>

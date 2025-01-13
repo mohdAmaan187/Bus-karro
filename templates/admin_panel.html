@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,49 +16,51 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <style>
-            .input-container {
-                position: relative; 
-                width: 100%;
-            }
+    <style>
+        .input-container {
+            position: relative;
+            width: 100%;
+        }
 
-            .form_input {
-                width: 100%;
-                padding: 10px;
-                box-sizing: border-box; 
-            }
+        .form_input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
 
-            .results {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                max-height: 200px;
-                overflow-y: auto;
-                border-radius: 11px;
-                margin-top: 5px; 
-                background: #ffffff;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                z-index: 1000;
-                display: none; 
-            }
+        .results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+            border-radius: 11px;
+            margin-top: 5px;
+            background: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none;
+            color: black;
+        }
 
-            .results div {
-                padding: 10px;
-                cursor: pointer;
-            }
+        .results div {
+            padding: 10px;
+            cursor: pointer;
+        }
 
-            .results div:hover {
-                background: #f0f0f0;
-            }
+        .results div:hover {
+            background: #f0f0f0;
+        }
 
-            .input-container:focus-within .results {
-                display: block;
-            }
-        </style>
+        .input-container:focus-within .results {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-      <div class="nav_bar">
+    <div class="nav_bar" style="margin-bottom: 0px;">
         <div class="comp_name">
             <button class="company_name" id="theme-switch">
                 Bus Karro
@@ -75,148 +78,40 @@
                     <p class="dropdown-item">Email</p>
                     <p class="dropdown-item">Username</p>
                     <form action="" class="formm">
-                    <button class="dropdown-item" id="Logout">Logout</button>
+                        <button class="dropdown-item" id="Logout">Logout</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="main_screen">
-        <div class="sidebar">
 
-        </div>
+    <div class="main_screen">
         <div class="menu_screen">
-            
-        </div>
-    </div>
-    
-    <div class="heading_con">
-        <h1 class="con_heading" style="font-size: 60px;">
-            Earning
-        </h1>
-    </div>
-    <div class="earning">
-        <div class="total_revenue">
-            <p class="tr_head">Total Revenue</p>
-            <p class="tr">$415,000</p>
-        </div>
-        <div class="monthly_revenue">
-            <p class="tr_head">Monthly Revenue</p>
-            <p class="mr">$4,000</p>
-        </div>
-        <div class="yearly_revenue">
-            <p class="tr_head">Yearly Revenue</p>
-            <p class="yr">$99,000</p>
-        </div>
-    </div>
-    <div class="heading_con">
-        <h1 class="con_heading">
-            Today's Schedule
-        </h1>
-    </div>
-    <div class="todays_schedule">
-        <table border="1">
-            <tr>
-                <th class="bus_no">
-                    Bus No.
-                </th>
-                <th class="driver">
-                    Driver
-                </th>
-                <th class="from_to">
-                    From - To
-                </th>
-                <th class="date">
-                    Date
-                </th>
-                <th class="passengerr">
-                    Time
-                </th>
-            </tr>
-            <tr>
-                <td class="bus_no">
-                    123456789
-                </td>
-                <td class="driver">
-                    Mohd. Amaan Shaikh
-                </td>
-                <td class="from_to">
-                    Hell to Heaven
-                </td>
-                <td class="date">
-                    18-07-2025
-                </td>
-                <td class="passengerr">
-                    1
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="heading_con">
-        <h1 class="con_heading">
-            Schedule Buses
-        </h1>
-    </div>
-    <div class="schedule_buses">
-        <div class="fix_con">
-            <p class="form_head">
-                Bus No.
-            </p>
-            <input type="number" class="form_input" placeholder="Bus number">
-            <p class="form_head">
-                Date
-            </p>
-            <input type="date" class="form_input" id="date">
-            <div class="input-container">
-            <p class="form_head">
-                From
-            </p>
-            <input type="text" class="form_input" placeholder="From" id="search-bar-from">
-            <div id="results-from" class="results"></div>
+            <div class="heading_con">
+                <h1 class="con_heading" style="font-size: 60px;">
+                    Earning
+                </h1>
             </div>
-            <div class="input-container">
-            <p class="form_head">
-                To         
-            </p>
-            <input type="text" class="form_input" placeholder="To" id="search-bar-to">
-            <div id="results-to" class="results"></div>
-            </div>
-            <p class="form_head">
-                Driver Name
-            </p>
-            <input type="text" class="form_input" placeholder="Driver Name">
-            <p class="form_head">
-                Time
-            </p>
-            <input type="Time" class="form_input" placeholder="Departure Time">
-            <button class="form_button">Submit</button>
-        </div>
-    </div>
-    <div class="heading_con">
-        <h1 class="con_heading">
-            Search Buses
-        </h1>
-    </div>
-    <div class="schedule_buses1" id="LC">
-        <div class="upd_fix_con">
-            <form id="searchForm">
-            <div class="search_box_container">
-                <div class="f11">
-                    <div class="from_container">
-                        <p class="search_text">Bus No.</p>
-                        <input type="text" id="search-bar-from" placeholder="Bus No." class="search_box">
-                    </div>
-                    <div class="when_container">
-                        <p class="search_text">Date</p>
-                        <input type="date" id="date" class="search_box">
-                    </div>
+            <div class="earning">
+                <div class="total_revenue">
+                    <p class="tr_head">Total Revenue</p>
+                    <p class="tr">$415,000</p>
                 </div>
-                <div class="search_buses">
-                    <button class="search_box_btn"><i class="fas fa-search"></i></button>
+                <div class="monthly_revenue">
+                    <p class="tr_head">Monthly Revenue</p>
+                    <p class="mr">$4,000</p>
+                </div>
+                <div class="yearly_revenue">
+                    <p class="tr_head">Yearly Revenue</p>
+                    <p class="yr">$99,000</p>
                 </div>
             </div>
-            </form>
-            <div class="table">
+            <div class="heading_con">
+                <h1 class="con_heading">
+                    Today's Schedule
+                </h1>
+            </div>
+            <div class="todays_schedule">
                 <table border="1">
                     <tr>
                         <th class="bus_no">
@@ -234,12 +129,6 @@
                         <th class="passengerr">
                             Time
                         </th>
-                        <th class="passengerr">
-                            Edit
-                        </th>
-                        <th class="passengerr">
-                            Delete
-                        </th>
                     </tr>
                     <tr>
                         <td class="bus_no">
@@ -249,7 +138,7 @@
                             Mohd. Amaan Shaikh
                         </td>
                         <td class="from_to">
-                            life to AfterLife
+                            Hell to Heaven
                         </td>
                         <td class="date">
                             18-07-2025
@@ -257,16 +146,15 @@
                         <td class="passengerr">
                             1
                         </td>
-                        <td class="passengerr">
-                            <button class="edt">Edit</button>
-                        </td>
-                        <td class="passengerr">
-                            <button class="dlt">Delete</button>
-                        </td>
                     </tr>
                 </table>
             </div>
-            <div class="schedule_buses" id="edit_buses">
+            <div class="heading_con">
+                <h1 class="con_heading">
+                    Schedule Buses
+                </h1>
+            </div>
+            <div class="schedule_buses">
                 <div class="fix_con">
                     <p class="form_head">
                         Bus No.
@@ -277,20 +165,20 @@
                     </p>
                     <input type="date" class="form_input" id="date">
                     <div class="input-container">
-                    <p class="form_head">
-                        From
-                    </p>
-                    <input type="text" class="form_input" placeholder="From" id="search-bar-from1">
-                    <div id="results-from1" class="results"></div>
+                        <p class="form_head">
+                            From
+                        </p>
+                        <input type="text" class="form_input" placeholder="From" id="search-bar-from">
+                        <div id="results-from" class="results"></div>
                     </div>
                     <div class="input-container">
-                    <p class="form_head">
-                        To         
-                    </p>
-                    <input type="text" class="form_input" placeholder="To" id="search-bar-to1">
-                    <div id="results-to1" class="results"></div>
+                        <p class="form_head">
+                            To
+                        </p>
+                        <input type="text" class="form_input" placeholder="To" id="search-bar-to">
+                        <div id="results-to" class="results"></div>
                     </div>
-                    <p class="form_head1">
+                    <p class="form_head">
                         Driver Name
                     </p>
                     <input type="text" class="form_input" placeholder="Driver Name">
@@ -301,63 +189,119 @@
                     <button class="form_button">Submit</button>
                 </div>
             </div>
-            
-
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer_company_name">
-            <h1 class="footer_company_name_text">Bus Karro</h1>
-        </div>
-        <div class="footer_details">
-            <div class="footer_info1">
-                <p class="footer_company_topic">
-                    <bolder>About</bolder>
-                </p>
-                <a href="about.html" class="links">
-                    <p class="links">About us</p>
-                </a>
-                <a href="tnc.html" class="links">
-                    <p class="links">Terms and Conditions</p>
-                </a>
-                <a href="policies.html" class="links">
-                    <p class="links">Privacy Policy</p>
-                </a>
-                <a href="contact.html" class="links">
-                    <p class="links">Contact Us</p>
-                </a>
+            <div class="heading_con">
+                <h1 class="con_heading">
+                    Scheduled Buses
+                </h1>
             </div>
-            <div class="footer_into2">
-                <p class="footer_topic">
-                    <bolder>Info</bolder>
-                </p>
-                <a href="FAQ.html" class="links">
-                    <p class="links">FAQ</p>
-                </a>
-                <a href="blog.html" class="links">
-                    <p class="links">Blog</p>
-                </a>
-                <a href="user_agreement.html" class="links">
-                    <p class="links">User Agreement</p>
-                </a>
-                <a href="agent_reg.html" class="links">
-                    <p class="links">Agent Registration</p>
-                </a>
-                <a href="agent_reg.html" class="links">
-                    <p class="links">Driver Registration</p>
-                </a>
-                <!-- <button id="theme-switch">change theme</button> -->
+            <div class="todays_schedule">
+                <table border="1">
+                    <tr>
+                        <th class="bus_no">
+                            Bus No.
+                        </th>
+                        <th class="driver">
+                            Driver
+                        </th>
+                        <th class="from_to">
+                            From - To
+                        </th>
+                        <th class="date">
+                            Date
+                        </th>
+                        <th class="date">
+                            Time
+                        </th>
+                        <th class="passengerr">
+                            Edit
+                        </th>
+                        <th class="passengerr">
+                            Delete
+                        </th>
+                    </tr>
+                    <!-- {% if all_scheduled %}
+                    {% for i in all_scheduled %} -->
+                    <tr>
+                        <td class="bus_no">{{ i.Bus_No }}</td>
+                        <td class="driver">{{ i.Driver_name }}</td>
+                        <td class="from_to">{{ i.F }}-{{ i.T }}</td>
+                        <td class="date">{{ i.Date }}</td>
+                        <td class="date">{{ i.Time }}</td>
+                        <td class="passengerr"><button class="edt">Edit</button></td>
+                        <td class="passengerr"><button class="dlt">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="10">
+                                <div class="upd_fix_con">
+                                    <form action="" name="Update_schedule" method="post">
+                                        <div class="schedule_buses" id="edit_buses">
+                                            <div class="fix_con">
+                                                <p class="form_head">
+                                                    Bus No.
+                                                </p>
+                                                <input type="number" class="form_input" placeholder="Bus number">
+                                                <p class="form_head">
+                                                    Date
+                                                </p>
+                                                <input type="date" class="form_input" id="date">
+                                                <div class="input-container">
+                                                    <p class="form_head">
+                                                        From
+                                                    </p>
+                                                    <input type="text" class="form_input" placeholder="From"
+                                                        id="search-bar-from1">
+                                                    <div id="results-from1" class="results"></div>
+                                                </div>
+                                                <div class="input-container">
+                                                    <p class="form_head">
+                                                        To
+                                                    </p>
+                                                    <input type="text" class="form_input" placeholder="To"
+                                                        id="search-bar-to1">
+                                                    <div id="results-to1" class="results"></div>
+                                                </div>
+                                                <p class="form_head1">
+                                                    Driver Name
+                                                </p>
+                                                <input type="text" class="form_input" placeholder="Driver Name">
+                                                <p class="form_head">
+                                                    Time
+                                                </p>
+                                                <input type="Time" class="form_input" placeholder="Departure Time">
+                                                <button class="form_button">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bus_no">{{ i.Bus_No }}</td>
+                        <td class="driver">{{ i.Driver_name }}</td>
+                        <td class="from_to">{{ i.F }}-{{ i.T }}</td>
+                        <td class="date">{{ i.Date }}</td>
+                        <td class="date">{{ i.Time }}</td>
+                        <td class="passengerr"><button class="edt">Edit</button></td>
+                        <td class="passengerr"><button class="dlt">Delete</button></td>
+                    </tr>
+                    <!-- {% endfor %}
+                    {% else %} -->
+                    <tr>
+                        <td colspan="7" class="date">There are NO buses scheduled</td>
+                    </tr>
+                    <!-- {% endif %} -->
+                </table>
             </div>
         </div>
-    </div>
-    
+
 
 
 </body>
 <script src="/static/JS/darkmode.js"></script>
 <script src="/static/JS/search.js"></script>
+<script src="/static/JS/date.js"></script>
 <script src="/static/JS/table.js"></script>
 <script src="/static/JS/as_bug_fix.js"></script>
 <script src="/static/JS/edit_search.js"></script>
+
 </html>
