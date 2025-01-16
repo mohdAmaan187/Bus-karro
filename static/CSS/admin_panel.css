@@ -243,6 +243,8 @@ body.darkmode .dropdown-menu .dropdown-item:hover {
     color: var(--text-hover);
     cursor: pointer;
     text-align: left;
+    font-size: 28px;
+    border-radius: 4px;
 }
 
 #Logout:hover {

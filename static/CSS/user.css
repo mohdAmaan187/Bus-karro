@@ -58,6 +58,77 @@ span {
     --accent-color:#443C68;
 }
 
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--primary-color);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    font-size: 20px;
+    color: var(--base-variant);
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    margin: 0px;
+}
+
+.dropdown-trigger:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-hover);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+body.darkmode .dropdown-menu {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+body.darkmode .dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: var(--text-hover);
+}
+
+.formm {
+    width: auto;
+    height: auto;
+}
+
+#Logout {
+    border:none; 
+    width: 150px;
+    height: auto;
+    background-color: var(--accent-color);
+    color: var(--text-hover);
+    cursor: pointer;
+    text-align: left;
+}
+
+#Logout:hover {
+    background-color: var(--primary-color);
+    color: var(--text-hover);
+}
+
 .location_date {
     background-color: var(--secondary-color);
     width: 100vw;
@@ -231,7 +302,8 @@ span {
 
 .map,
 .booked,
-.available {
+.available,
+.selected {
     padding: 4px;
     width: 80px;
     height: 20px;
@@ -243,8 +315,17 @@ span {
     background-color: #fff;
 }
 
+.selected {
+    border: solid 1px red;
+    background-color: rgb(112, 112, 255);
+}
+
 .map {
     cursor:pointer;
+}
+
+.booked {
+    cursor:default;
 }
 
 .pillow {
@@ -308,10 +389,23 @@ span {
     color: black;
 }
 
+.book_seat {
+    margin-top: 237px;
+    display: flex;
+    justify-content: right;
+}
+
+.confirm {
+    background-color: rgb(196, 0, 0);
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
 /* SIDEBAR CSS */
 .sidebar {
     padding: 10px;
-    height: 200%;
+    height: 100%;
 }
 
 .sidebar_txt {
