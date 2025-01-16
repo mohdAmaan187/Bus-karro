@@ -99,6 +99,7 @@ span {
 .main_screen {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .sidebar {
@@ -233,10 +234,17 @@ span {
 .available {
     padding: 4px;
     width: 80px;
-    height: 30px;
+    height: 20px;
+    margin-bottom: 5px;
     display: flex;
     vertical-align: middle;
     justify-content: end;
+    border: solid 1px black;
+    background-color: #fff;
+}
+
+.map {
+    cursor:pointer;
 }
 
 .pillow {
@@ -303,7 +311,7 @@ span {
 /* SIDEBAR CSS */
 .sidebar {
     padding: 10px;
-    height: 100vh;
+    height: 200%;
 }
 
 .sidebar_txt {
@@ -315,10 +323,17 @@ span {
 .bt_txt {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .filter_select {
-    width: 100px;
+    width: 20px;
     font-size: 18px;
     margin-bottom: 10px;
+}
+
+.fl_txt {
+    display: inline;
+    font-size: 20px;
+    margin-left: 10px;
 }

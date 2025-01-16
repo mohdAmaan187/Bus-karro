@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +57,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="nav_bar" style="margin-bottom: 0px;">
         <div class="comp_name">
@@ -90,8 +88,9 @@
                 <p class="user_email">EMAILL</p>
             </div>
             <div class="sidebar_buttons">
-                <a href="schedule_bus.html" class="schedule_bus">Schedule Bus</a>
+                <!-- <a href="schedule_bus.html" class="schedule_bus">Schedule Bus</a> -->
                 <a href="scheduled_bus.html" class="scheduled_bus">Scheduled Bus</a>
+                <a href="admin_panel.html" class="aajka_schedule">Today's Schedule</a>
                 <!-- <button class="available_bus">Available Bus</button> -->
                 <!-- <button class="available_driver">Available Driver</button> -->
                 <a href="contact.html" class="contact_us">Contact Us</a>
@@ -100,72 +99,46 @@
         </div>
         <div class="menu_screen">
             <div class="heading_con">
-                <h1 class="con_heading" style="font-size: 60px;">
-                    Earning
-                </h1>
-            </div>
-            <div class="earning">
-                <div class="total_revenue">
-                    <p class="tr_head">Total Revenue</p>
-                    <p class="tr">$415,000</p>
-                </div>
-                <div class="monthly_revenue">
-                    <p class="tr_head">Monthly Revenue</p>
-                    <p class="mr">$4,000</p>
-                </div>
-                <div class="yearly_revenue">
-                    <p class="tr_head">Yearly Revenue</p>
-                    <p class="yr">$99,000</p>
-                </div>
-            </div>
-            <div class="heading_con">
                 <h1 class="con_heading">
-                    Today's Schedule
+                    Schedule Buses
                 </h1>
             </div>
-            <div class="todays_schedule">
-                <table border="1">
-                    <tr>
-                        <th class="bus_no">
-                            Bus No.
-                        </th>
-                        <th class="driver">
-                            Driver
-                        </th>
-                        <th class="from_to">
-                            From - To
-                        </th>
-                        <th class="date">
-                            Date
-                        </th>
-                        <th class="passengerr">
-                            Time
-                        </th>
-                    </tr>
-                    <tr>
-                        <td class="bus_no">
-                            123456789
-                        </td>
-                        <td class="driver">
-                            Mohd. Amaan Shaikh
-                        </td>
-                        <td class="from_to">
-                            Hell to Heaven
-                        </td>
-                        <td class="date">
-                            18-07-2025
-                        </td>
-                        <td class="passengerr">
-                            1
-                        </td>
-                    </tr>
-                </table>
+            <div class="schedule_buses">
+                <div class="fix_con">
+                    <p class="form_head">
+                        Bus No.
+                    </p>
+                    <input type="number" class="form_input" placeholder="Bus number">
+                    <p class="form_head">
+                        Date
+                    </p>
+                    <input type="date" class="form_input" id="date">
+                    <div class="input-container">
+                        <p class="form_head">
+                            From
+                        </p>
+                        <input type="text" class="form_input" placeholder="From" id="search-bar-from">
+                        <div id="results-from" class="results"></div>
+                    </div>
+                    <div class="input-container">
+                        <p class="form_head">
+                            To
+                        </p>
+                        <input type="text" class="form_input" placeholder="To" id="search-bar-to">
+                        <div id="results-to" class="results"></div>
+                    </div>
+                    <p class="form_head">
+                        Driver Name
+                    </p>
+                    <input type="text" class="form_input" placeholder="Driver Name">
+                    <p class="form_head">
+                        Time
+                    </p>
+                    <input type="Time" class="form_input" placeholder="Departure Time">
+                    <button class="form_button">Submit</button>
+                </div>
             </div>
-        </div>
     </div>
-
-
-
 </body>
 <script src="/static/JS/darkmode.js"></script>
 <script src="/static/JS/search.js"></script>
@@ -173,5 +146,4 @@
 <script src="/static/JS/table.js"></script>
 <script src="/static/JS/as_bug_fix.js"></script>
 <script src="/static/JS/edit_search.js"></script>
-
 </html>
